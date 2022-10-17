@@ -1,0 +1,6 @@
+D:\2nd Semester\Week 12\New Game\Framework\bin\Debug\Framework.dll
+D:\2nd Semester\Week 12\New Game\Framework\bin\Debug\Framework.pdb
+D:\2nd Semester\Week 12\New Game\Framework\obj\Debug\Framework.csproj.AssemblyReference.cache
+D:\2nd Semester\Week 12\New Game\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache
+D:\2nd Semester\Week 12\New Game\Framework\obj\Debug\Framework.dll
+D:\2nd Semester\Week 12\New Game\Framework\obj\Debug\Framework.pdb

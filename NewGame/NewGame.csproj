@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2021F7E-4BB6-4357-B969-DDF588E53ED1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewGame</RootNamespace>
+    <AssemblyName>NewGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Game Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Game Start.designer.cs">
+      <DependentUpon>Game Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GameFinished.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GameFinished.designer.cs">
+      <DependentUpon>GameFinished.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Game Start.resx">
+      <DependentUpon>Game Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GameFinished.resx">
+      <DependentUpon>GameFinished.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{88aa2ac3-2783-4498-b210-2c66ce3b8c5a}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip1_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufoYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserGreen03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserBlue03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyRed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laserRed03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomb_01_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game over1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you win1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastel-red-color-solid-background-1920x1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulletPowerup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifePowerUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferozi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
